@@ -28,18 +28,57 @@
         z-index: 2;
 
         .row {
-            .col-md-3 {
+            .col-md-8 {
+                h1 {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 700;
+                    line-height: 70px;
+                    font-size: 50px;
+                }
+
+                h4 {
+                    font-size: 21px;
+                    font-weight: 700px;
+                    left: 29px;
+                }
+            }
+
+            .col-md-4 {
                 .box-form {
+                    .PAYMENTS {
+                        color: #278CA9;
+                        font-weight: 600;
+                    }
+
                     background-color: #003057;
-                    height: 100%;
-                    width: 100%;
+
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
                     color: white;
-                    padding: 20px;
+                    width: 300px;
+                    border-radius: 11px;
+                    padding: 15px;
 
+                    form {
+                        input {
+                            display: block !important;
+                        }
+
+                        button {
+                            background-color: #FF5200;
+                            color: white;
+                            outline: none;
+                            border: none;
+                            width: 100%;
+                            font-weight: 700;
+                            height: 40px;
+                            font-size: 19px;
+
+
+                        }
+                    }
                 }
             }
         }

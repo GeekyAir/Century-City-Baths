@@ -1,26 +1,33 @@
-.navbar {
-    .container {
-        .collapse .navbar-collapse {
-            .navbar-nav {
-                .estimate {
-                    .btn-estimate {
-                        background-color: #FF5200;
-                        color: white;
-                        font-size: 11px;
-                    }
-                }
-            }
-        }
-    }
-}
+// .navbar {
+//     .container {
+//         .collapse .navbar-collapse {
+//             .navbar-nav {
+//                 .estimate {
+//                     .btn-estimate {
+//                         background-color: #FF5200;
+//                         color: white;
+//                         font-size: 14px;
+//                         outline: none;
+//                         border: none;
+//                         height: 31px;
+//                         width: 152px;
+//                         text-transform: uppercase;
+
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 .btn-estimate {
     background-color: #FF5200;
     color: white;
-    font-size: 11px;
+    font-size: 14px;
     outline: none;
     border: none;
-    height: 26px;
-    width: 120px;
+    height: 29px;
+    width: 152px;
     text-transform: uppercase;
+    font-weight: 600;
 }
