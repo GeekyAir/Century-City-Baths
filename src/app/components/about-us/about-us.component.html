@@ -1,1 +1,100 @@
-<p>about-us works!</p>
+<section class="pt-3 py-5">
+  <div class="container">
+    <h2>Your Choice for the Number 1 Rated Home Remodeler in the Midwest
+    </h2>
+    <p>As a top name in local contractors, Mad City Windows has provided award-winning remodeling services
+      since 1998.
+    </p>
+    <div class="row gap-3">
+      <div class="col-lg-6 col-md-12 ">
+
+        <img src="../../../assets/About-us/Screenshot 2024-05-29 224916.png " class="w-100">
+
+        <div class=" pt-3">
+          <div class="d-flex flex-row gap-2 w-100">
+            <img src="../../../assets/About-us/galleria 1.jpg" width="30%" alt="">
+            <img src="../../../assets/About-us/galleria 2.jpg" width="30%" alt="">
+            <img src="../../../assets/About-us/galleria 3.jpg" width="30%" alt="">
+
+          </div>
+          <p-galleria (value)="images" [(visible)]="displayCustom" [(activeIndex)]="activeIndex"
+            [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '850px' }" [numVisible]="7"
+            [circular]="true" [fullScreen]="true" [showItemNavigators]="true" [showThumbnails]="false">
+            <ng-template pTemplate="item">
+              <p>sdxfcgvjhbykulniml,</p>
+              <img [src]="images" style="width: 100% ;display: block" />
+            </ng-template>
+          </p-galleria>
+          <div class="mt-2">
+            <h3>About Mad City Windows</h3>
+            <p>To learn about Mad City Windows and its history, you need to start back in 1998 when our family-owned
+              company first opened its doors and changed the face of home remodeling in Wisconsin and Illinois. From the
+              beginning, our business has been built on a foundation of friendship and trust and, in return, local
+              homeowners have come to know they can place their trust in us. In order make certain that we consistently
+              earn that trust, we are dedicated to ensuring the expert, seamless delivery of high-quality products and
+              remodeling solutions to homeowners throughout our service area.
+
+              Today, we expand our home remodeling expertise across Wisconsin, Minnesota, Iowa, Missouri, Kansas and
+              Illinois. With over 50,000 completed projects, we take our 2+ decades of experience to serve the
+              communities
+              of Minnesota, Iowa and Illinois. They can expect our highest standard of service and professionalism.</p>
+            <h3>A Legacy of Customer Service and Local, Skilled Contracting</h3>
+            <p>At Mad City, we take a lot of pride in our relationships with our neighbors and the communities that we
+              serve. We’re a local remodeling company, so we know exactly what it takes to make your home look and
+              function at its best in the extreme Midwestern climate, and we bring your vision to life with our
+              industry-leading products, exceptional services, and personalized care.<br>
+              We hold ourselves to the highest performance standards, making us the first choice for:
+            </p>
+            <ul>
+              <li>Replacement Windows</li>
+              <li>Bathroom Remodeling</li>
+              <li>Kitchen Refacing</li>
+              <li>Award-Winning Remodeling Solutions You Can Rely On</li>
+            </ul>
+            <p>The skilled, screened professionals at Mad City know that you want your house to feel like a home, and
+              we’ll help you make that happen by providing superior attention to detail and comprehensive remodeling
+              solutions that are affordable and guaranteed to be done right. Over the years that we’ve been in business,
+              we’ve been consistently recognized for our Core Values of honesty, integrity, reliability, and
+              accountability.
+
+              While our thousands of satisfied customers are our greatest achievement, we are proud to be a company with
+              distinctions such as:</p>
+            <ul>
+              <li><strong>Rated the Number 1 Wisconsin Remodeler for 8 years running!</strong></li>
+              <li><i>Angie’s List </i>“Super Service Award" in 2021</li>
+              <li>“Top 500 Remodelers” recognition</li>
+              <li>“Star of Madison Award” for windows</li>
+              <li>2012 “Remodeling Big 50” Award</li>
+              <li>Membership in NARI and Guild Quality</li>
+              <li>A+ Rating & Accreditation with the Better Business Bureau</li>
+            </ul>
+            <h2>Learn More About the Full-Service Remodeling Options from Mad City Windows</h2>
+            <p>Your home is your greatest investment, and you deserve to work with a professional and friendly team when
+              it’s time to make improvements to your property. At Mad City Windows, we are here to serve you every step
+              of the way, and we invite you to contact us to learn more about the products and services we offer. Just
+              give us a call or fill out our online form now to request a free, in-home consultation and price estimate.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-5 col-md-12 ">
+        <div class="formInstall d-flex align-items-center flex-column p-3">
+          <h2 class="fw-bold text-white">FREE INSTALLATION</h2>
+          <p class="text-warning fs-4 text-center">NO PAYMENTS NO INTEREST UNTIL 2026</p>
+          <div class="row">
+            <div class="col-4 d-flex flex-column align-items-center gap-3">
+              <img src="../../../assets/About-us/Angi_SSA23_Logo_530.png" alt="" width="120">
+              <img src="../../../assets/About-us/award-bbb-white.webp" alt="" width="120">
+              <img src="../../../assets/About-us/award-ranked-1.webp" alt="" width="120">
+            </div>
+            <div class="col-5">
+              <app-form></app-form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
