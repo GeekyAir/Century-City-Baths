@@ -3,41 +3,32 @@
     <a class="navbar-brand">
       <img src="../../../assets/home/logo.png" alt="" class="w-50" />
     </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mb-1 mb-lg-0 me-5 ms-0">
         <li class="nav-item">
-          <a class="nav-link active">Home</a>
+          <a class="nav-link " routerLinkActive="active" routerLink="home">Home</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link ">Bathrooms</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active">Bathrooms</a>
+          <a class="nav-link ">windows</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active">windows</a>
+          <a class="nav-link ">specials</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active">specials</a>
+          <a class="nav-link ">gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active">gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active">about</a>
+          <a class="nav-link " routerLink="about-us" routerLinkActive="active">About</a>
         </li>
       </ul>
-      <div
-        class="estimate d-flex justify-content-end alingn-items-center gap-3"
-      >
+      <div class="estimate d-flex justify-content-end alingn-items-center gap-3">
         <p class="m-0 p-0 fs-5" style="text-wrap: nowrap">
           <strong>(312) 212-0698</strong>
         </p>
