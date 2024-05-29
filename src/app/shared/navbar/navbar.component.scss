@@ -21,13 +21,17 @@
 // }
 
 .btn-estimate {
-    background-color: #FF5200;
-    color: white;
-    font-size: 14px;
-    outline: none;
-    border: none;
-    height: 29px;
-    width: 152px;
-    text-transform: uppercase;
-    font-weight: 600;
+  background-color: #FF5200;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  height: 29px;
+  width: 152px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+li {
+  cursor: pointer;
 }
