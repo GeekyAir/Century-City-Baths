@@ -35,3 +35,11 @@
 li {
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  img {
+    width: 219px !important;
+
+  }
+
+}
