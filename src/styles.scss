@@ -14,3 +14,38 @@ a {
 li a {
   padding-left: 0px;
 }
+
+p-megaMenu {
+
+
+  .p-megamenu-horizontal .p-megamenu-root-list {
+    flex-wrap: nowrap !important;
+
+
+  }
+}
+
+.p-megamenu {
+  background: none !important;
+  border: none;
+  color: none;
+  z-index: 0 !important;
+}
+
+.p-megamenu .p-submenu-header {
+  margin: 0px;
+  padding: 0px;
+  white-space: nowrap;
+}
+
+.p-megamenu .p-submenu-list {
+  width: 240px;
+}
+
+.p-megamenu.p-megamenu-horizontal .p-megamenu-root-list>.p-menuitem>.p-menuitem-content .p-menuitem-link .p-menuitem-text {
+  white-space: nowrap;
+}
+
+ul {
+  padding-left: 1rem;
+}

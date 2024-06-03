@@ -13,23 +13,71 @@ import { MegaMenuModule } from 'primeng/megamenu';
 })
 export class NavbarComponent {
   items: MegaMenuItem[] | undefined;
+  itemsBathroom: MegaMenuItem[] | undefined;
   menuVisible = false;
-
-
-  ngOnInit() {
+  constructor() {
     this.items = [
       {
-        label: 'Recent Bathroom Projects',
+        label: 'Bathroom',
+        items: [
+          [
+            { label: 'Accessories', imgSrc: '../../../assets/navbar/bathtub-replacement.jpg', routerLink: '/Bathroom/Accessories' },
+            { label: 'Armchair', imgSrc: 'path/to/armchair-image.jpg', routerLink: '/Bathroom/Armchair' },
+            { label: 'Coffee Table', imgSrc: 'path/to/coffee-table-image.jpg', routerLink: '/Bathroom/CoffeeTable' },
+            { label: 'Couch', imgSrc: 'path/to/couch-image.jpg', routerLink: '/Bathroom/Couch' },
+            { label: 'TV Stand', imgSrc: 'path/to/tv-stand-image.jpg', routerLink: '/Bathroom/TVStand' }
+          ]
+        ]
+      },
+      // Add other menu items as needed
+    ];
+  }
 
-        routerLink: ['/Gallery']
+  ngOnInit() {
+    // this.items = [
+    //   {
+    //     label: 'Recent Bathroom Projects',
+
+    //     routerLink: ['/Gallery']
+    //   },
+    //   {
+    //     label: 'Recent Window Projects',
+
+    //     routerLink: ['/Gallery']
+    //   },
+    // ];
+    // this.itemsBathroom = []
+
+
+    this.items = [
+      { label: 'Home', routerLink: '/home' },
+      {
+        label: 'Bathroom',
+        items: [
+          [
+            { label: 'Accessories', imgSrc: '../../../assets/navbar/bathtub-replacement.jpg', routerLink: '/Bathroom/Accessories' },
+            { label: 'Armchair', imgSrc: 'path/to/armchair-image.jpg', routerLink: '/Bathroom/Armchair' },
+            { label: 'Coffee Table', imgSrc: 'path/to/coffee-table-image.jpg', routerLink: '/Bathroom/CoffeeTable' },
+            { label: 'Couch', imgSrc: 'path/to/couch-image.jpg', routerLink: '/Bathroom/Couch' },
+            { label: 'TV Stand', imgSrc: 'path/to/tv-stand-image.jpg', routerLink: '/Bathroom/TVStand' }
+          ]
+        ]
       },
       {
-        label: 'Recent Window Projects',
+        label: 'Gallery',
+        items: [
+          [
+            { label: 'Recent Bathroom Projects', routerLink: ['/Gallery'] },
+            { label: 'Recent Window Projects', routerLink: ['/Gallery'] },
 
-        routerLink: ['/Gallery']
+          ]
+        ]
+      },
+      {
+        label: 'About Us', routerLink: '/about-us'
       }
-      // Add more items here as needed
     ];
+
   }
 
   showMenu() {
