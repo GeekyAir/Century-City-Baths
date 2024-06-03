@@ -18,4 +18,11 @@ export const routes: Routes = [
         (c) => c.AboutUsComponent
       ),
   },
+  {
+    path: 'Gallery',
+    loadComponent: () =>
+      import('./components/gallery/gallery.component').then(
+        (c) => c.GalleryComponent
+      ),
+  },
 ];

@@ -1,0 +1,26 @@
+.gallery {
+    .container {
+
+        h3,
+        h4 {
+            color: #2D4EA1;
+        }
+
+        .dataBathroom {
+            h4 {
+                margin-bottom: 25px;
+            }
+
+            p-card {
+                cursor: pointer;
+            }
+        }
+
+        .dataWindow {
+            p-card {
+                cursor: pointer;
+            }
+
+        }
+    }
+}

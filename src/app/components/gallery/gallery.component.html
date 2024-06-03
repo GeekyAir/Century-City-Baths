@@ -1,0 +1,63 @@
+<section class="py-5 gallery bg-light">
+  <div class="container">
+    <h3>
+      Discover Our Stunning Recent Projects at Century City Baths and Windows!
+    </h3>
+    <p>
+      Our recent project gallery showcases the stunning transformations we've
+      accomplished for our clients, from energy-efficient window replacements to
+      luxurious bathroom renovations. At Century City Baths and Windows, we're
+      committed to providing top-quality services that exceed your expectations.
+      If you're looking to transform your home, contact us at (312) 212-0698 to
+      schedule a free in-home estimate.
+    </p>
+    <div class="dataBathroom py-5">
+      <h4>Recent Bathroom Projects</h4>
+      <div
+        class="row justify-content-center align-items-center d-flex flex-wrap gap-1"
+      >
+        <div class="col-md-3 py-3" *ngFor="let image of images">
+          <p-card>
+            <img
+              [src]="image.itemImageSrc"
+              [alt]="image.alt"
+              class="w-100"
+              (click)="showGallery()"
+            />
+          </p-card>
+        </div>
+      </div>
+    </div>
+    <div class="dataWindow py-5">
+      <h4>Recent Window Projects</h4>
+      <div
+        class="row justify-content-center align-items-center d-flex flex-wrap gap-3"
+      >
+        <div class="col-md-3" *ngFor="let image of images">
+          <p-card (click)="showGallery()">
+            <img [src]="image.itemImageSrc" [alt]="image.alt" class="w-100" />
+          </p-card>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="displayBasic">
+      <p-galleria
+        [value]="images"
+        [(visible)]="displayBasic"
+        (visibleChange)="closeGallery()"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '850px' }"
+        [numVisible]="7"
+        [circular]="true"
+        [fullScreen]="true"
+        [showItemNavigators]="true"
+        [showThumbnails]="false"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+        </ng-template>
+      </p-galleria>
+    </div>
+  </div>
+</section>

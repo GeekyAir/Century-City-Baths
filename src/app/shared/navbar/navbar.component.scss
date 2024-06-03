@@ -38,8 +38,25 @@ li {
   a {
     text-transform: capitalize;
     font-weight: bold;
+    text-decoration: none;
   }
 }
+
+.nav-item {
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
   img {
