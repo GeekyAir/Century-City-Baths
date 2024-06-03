@@ -13,6 +13,11 @@
 
             p-card {
                 cursor: pointer;
+
+                .p-card .p-card-body {
+                    padding: 0px !important;
+
+                }
             }
         }
 
