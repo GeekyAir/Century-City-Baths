@@ -21,13 +21,33 @@ export class NavbarComponent {
         label: 'Bathroom',
         items: [
           [
-            { label: 'Accessories', imgSrc: '../../../assets/navbar/bathtub-replacement.jpg', routerLink: '/Bathroom/Accessories' },
-            { label: 'Armchair', imgSrc: 'path/to/armchair-image.jpg', routerLink: '/Bathroom/Armchair' },
-            { label: 'Coffee Table', imgSrc: 'path/to/coffee-table-image.jpg', routerLink: '/Bathroom/CoffeeTable' },
-            { label: 'Couch', imgSrc: 'path/to/couch-image.jpg', routerLink: '/Bathroom/Couch' },
-            { label: 'TV Stand', imgSrc: 'path/to/tv-stand-image.jpg', routerLink: '/Bathroom/TVStand' }
-          ]
-        ]
+            {
+              label: 'Accessories',
+              imgSrc: '../../../assets/navbar/bathtub-replacement.jpg',
+              routerLink: '/Bathroom/Accessories',
+            },
+            {
+              label: 'Armchair',
+              imgSrc: 'path/to/armchair-image.jpg',
+              routerLink: '/Bathroom/Armchair',
+            },
+            {
+              label: 'Coffee Table',
+              imgSrc: 'path/to/coffee-table-image.jpg',
+              routerLink: '/Bathroom/CoffeeTable',
+            },
+            {
+              label: 'Couch',
+              imgSrc: 'path/to/couch-image.jpg',
+              routerLink: '/Bathroom/Couch',
+            },
+            {
+              label: 'TV Stand',
+              imgSrc: 'path/to/tv-stand-image.jpg',
+              routerLink: '/Bathroom/TVStand',
+            },
+          ],
+        ],
       },
       // Add other menu items as needed
     ];
@@ -48,36 +68,54 @@ export class NavbarComponent {
     // ];
     // this.itemsBathroom = []
 
-
     this.items = [
       { label: 'Home', routerLink: '/home' },
       {
         label: 'Bathroom',
         items: [
           [
-            { label: 'Accessories', imgSrc: '../../../assets/navbar/bathtub-replacement.jpg', routerLink: '/Bathroom/Accessories' },
-            { label: 'Armchair', imgSrc: 'path/to/armchair-image.jpg', routerLink: '/Bathroom/Armchair' },
-            { label: 'Coffee Table', imgSrc: 'path/to/coffee-table-image.jpg', routerLink: '/Bathroom/CoffeeTable' },
-            { label: 'Couch', imgSrc: 'path/to/couch-image.jpg', routerLink: '/Bathroom/Couch' },
-            { label: 'TV Stand', imgSrc: 'path/to/tv-stand-image.jpg', routerLink: '/Bathroom/TVStand' }
-          ]
-        ]
+            {
+              label: 'Accessories',
+              imgSrc: '../../../assets/navbar/bathtub-replacement.jpg',
+              routerLink: '/Bathroom/Accessories',
+            },
+            {
+              label: 'Armchair',
+              imgSrc: 'path/to/armchair-image.jpg',
+              routerLink: '/Bathroom/Armchair',
+            },
+            {
+              label: 'Coffee Table',
+              imgSrc: 'path/to/coffee-table-image.jpg',
+              routerLink: '/Bathroom/CoffeeTable',
+            },
+            {
+              label: 'Couch',
+              imgSrc: 'path/to/couch-image.jpg',
+              routerLink: '/Bathroom/Couch',
+            },
+            {
+              label: 'TV Stand',
+              imgSrc: 'path/to/tv-stand-image.jpg',
+              routerLink: '/Bathroom/TVStand',
+            },
+          ],
+        ],
       },
       {
         label: 'Gallery',
         items: [
           [
-            { label: 'Recent Bathroom Projects', routerLink: ['/Gallery'] },
-            { label: 'Recent Window Projects', routerLink: ['/Gallery'] },
-
-          ]
-        ]
+            { label: 'Recent Bathroom Projects', routerLink: ['/gallery'] },
+            { label: 'Recent Window Projects', routerLink: ['/gallery'] },
+          ],
+        ],
       },
       {
-        label: 'About Us', routerLink: '/about-us'
-      }
+        label: 'About Us',
+        routerLink: '/about-us',
+      },
     ];
-
   }
 
   showMenu() {
@@ -88,5 +126,3 @@ export class NavbarComponent {
     this.menuVisible = false;
   }
 }
-
-

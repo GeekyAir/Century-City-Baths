@@ -19,10 +19,17 @@ export const routes: Routes = [
       ),
   },
   {
-    path: 'Gallery',
+    path: 'gallery',
     loadComponent: () =>
       import('./components/gallery/gallery.component').then(
         (c) => c.GalleryComponent
+      ),
+  },
+  {
+    path: 'walk-in-showers',
+    loadComponent: () =>
+      import('./components/walk-in-showers/walk-in-showers.component').then(
+        (c) => c.WalkInShowersComponent
       ),
   },
 ];
