@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
       <img src="../../../assets/home/logo.png" alt="" class="w-50" />
     </a>
     <button
@@ -15,82 +15,116 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-1 mb-lg-0 me-5 ms-0 w-50">
-        <!-- <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" routerLink="home"
-            >Home</a
-          >
-        </li>
-        <li class="nav-item" (mouseover)="showMenu()" (mouseleave)="hideMenu()">
-          <a class="nav-link" routerLink="Gallery" routerLinkActive="active"
-            >Bathroom</a
-          >
-          <div
-            *ngIf="menuVisible"
-            class="card justify-content-center align-items-center d-flex flex-column"
-          >
-            <p-megaMenu
-              [model]="itemsBathroom"
-              orientation="horizontal"
-              [style]="{ 'white-space': 'nowrap' }"
-              [model]="itemsBathroom"
-            ></p-megaMenu>
-          </div>
-        </li>
-
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" routerLink="about-us" routerLinkActive="active"
-            >About</a
-          >
+          <a class="nav-link active" routerLink="/home">Home</a>
         </li>
-        <li class="nav-item" (mouseover)="showMenu()" (mouseleave)="hideMenu()">
-          <a class="nav-link" routerLink="Gallery" routerLinkActive="active"
-            >Gallery</a
-          >
-          <div
-            *ngIf="menuVisible"
-            class="card justify-content-center align-items-center d-flex flex-column"
-          >
-            <p-megaMenu
-              [model]="items"
-              orientation="horizontal"
-              [style]="{ 'white-space': 'nowrap' }"
-            ></p-megaMenu>
-          </div>
-        </li> -->
-        <!-- <p-megaMenu [model]="items"></p-megaMenu> -->
 
-        <p-menubar [model]="items">
-          <ng-template pTemplate="item" let-item>
-            <ng-container *ngIf="item.route; else urlRef">
-              <a [routerLink]="item.route" class="p-menuitem-link">
-                <span [class]="item.icon"></span>
-                <span class="ml-2">{{ item.label }}</span>
-              </a>
-            </ng-container>
-            <ng-template #urlRef>
-              <a
-                *ngIf="item.url; else noLink"
-                [href]="item.url"
-                class="p-menuitem-link"
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Bathroom
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" routerLink="/tub-to-shower"
+                >Tub to Shower Conversions</a
               >
-                <span [class]="item.icon"></span>
-                <span class="ml-2">{{ item.label }}</span>
-              </a>
-            </ng-template>
-            <ng-template #noLink>
-              <div class="p-menuitem-link">
-                <span [class]="item.icon"></span>
-                <span class="ml-2">{{ item.label }}</span>
-                <span class="pi pi-fw pi-angle-down ml-2"></span>
-              </div>
-            </ng-template>
-          </ng-template>
-        </p-menubar>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/shower-to-tub"
+                >Shower to Tub Conversions</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/walk-in-showers"
+                >Walk-In Showers</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/bathtub-replacement"
+                >Bathtub Replacement</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/flooring"
+                >Flooring, Vanity, Drywall</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Windows
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" routerLink="/tub-to-shower"
+                >Tub to Shower Conversions</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/shower-to-tub"
+                >Shower to Tub Conversions</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/walk-in-showers"
+                >Walk-In Showers</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/bathtub-replacement"
+                >Bathtub Replacement</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/flooring"
+                >Flooring, Vanity, Drywall</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Gallery
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" routerLink="/gallery"
+                >Recent Bathroom Projects</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/gallery"
+                >Recent Window Projects</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/about-us">About Us</a>
+        </li>
       </ul>
-
       <div
-        class="estimate d-flex justify-content-end alingn-items-center gap-3"
+        class="estimate d-flex justify-content-end alingn-items-center gap-3 flex-md-row flex-column"
       >
         <p class="m-0 p-0 fs-5" style="text-wrap: nowrap">
           <strong>(312) 212-0698</strong>
@@ -100,4 +134,3 @@
     </div>
   </div>
 </nav>
-<nav></nav>
