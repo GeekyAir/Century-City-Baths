@@ -98,11 +98,11 @@ export class NavbarComponent {
         items: [
           {
             label: 'Tub to Shower Conversions',
-            route: '/gallery',
+            route: '/tub-to-shower',
           },
           {
             label: 'Shower to Tub Conversions',
-            route: '/gallery',
+            route: '/shower-to-hub',
           },
           {
             label: 'Walk-In Showers',
@@ -110,11 +110,11 @@ export class NavbarComponent {
           },
           {
             label: 'Bathtub Replacement',
-            route: '/gallery',
+            route: '/bathtub-replacement',
           },
           {
             label: 'Flooring, Vanity, Drywall',
-            route: '/gallery',
+            route: '/flooring',
           },
         ],
       },
