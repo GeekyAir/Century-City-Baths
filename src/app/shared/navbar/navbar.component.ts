@@ -102,7 +102,7 @@ export class NavbarComponent {
           },
           {
             label: 'Shower to Tub Conversions',
-            route: '/shower-to-hub',
+            route: '/shower-to-tub',
           },
           {
             label: 'Walk-In Showers',
