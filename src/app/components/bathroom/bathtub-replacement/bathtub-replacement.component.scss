@@ -1,0 +1,67 @@
+.bathtub-replacement {
+
+  .container {
+    .row {
+      .left {
+        .first {
+          background-color: #003057;
+          color: #fff;
+          border-radius: 7px 7px 0 0;
+
+          h4 {
+            font-family: 'Oswald';
+            font-size: 24px;
+            font-weight: 400;
+          }
+
+          span {
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+
+        .second {
+          border: 1px solid #003057;
+          border-radius: 0 0 4px 4px;
+        }
+
+        .formInstall {
+          background: linear-gradient(rgba(0, 48, 87, .8), rgba(0, 48, 87, .7)), url(https://cdn-jjfcl.nitrocdn.com/XPFcOjqjRmZDdavmRxXUnIcNNqorJIsz/assets/images/optimized/rev-3ba151a/madcitywindows.com/wp-content/themes/_custom/img/quote-bg.jpeg) no-repeat top left;
+          min-height: 550px;
+
+
+        }
+      }
+
+      h2,
+      h3 {
+        color: #003057;
+        font-size: 25px;
+        font-weight: 700;
+        font-family: 'Oswald';
+
+      }
+
+      p {
+        font-family: 'Open Sans';
+        color: rgb(70, 70, 70)
+      }
+
+      ul {
+        li {
+          color: #464646;
+          margin-bottom: 10px;
+
+
+          .btn {
+            background-color: #FF5200;
+            color: #fff;
+
+          }
+        }
+      }
+    }
+
+
+  }
+}
