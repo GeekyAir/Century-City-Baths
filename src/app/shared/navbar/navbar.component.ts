@@ -18,7 +18,14 @@ interface MenuItem {
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, MegaMenuModule, CommonModule, RouterModule, MenubarModule],
+  imports: [
+    RouterLink,
+    RouterLinkActive,
+    MegaMenuModule,
+    CommonModule,
+    RouterModule,
+    MenubarModule,
+  ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
@@ -27,12 +34,9 @@ export class NavbarComponent {
   itemsBathroom: MegaMenuItem[] | undefined;
   menuVisible = false;
   label!: string;
-  constructor(private router: Router) {
-
-  }
+  constructor(private router: Router) {}
 
   ngOnInit() {
-
     // this.items = [
     //   { label: 'Home', routerLink: '/home' },
     //   {
@@ -87,55 +91,52 @@ export class NavbarComponent {
     this.items = [
       {
         label: 'Home',
-        route: '/home'
+        route: '/home',
       },
       {
         label: 'Bathroom',
         items: [
           {
             label: 'Tub to Shower Conversions',
-            route: '/gallery'
+            route: '/tub-to-shower',
           },
           {
             label: 'Shower to Tub Conversions',
-            route: '/gallery'
+            route: '/shower-to-hub',
           },
           {
             label: 'Walk-In Showers',
-            route: '/gallery'
+            route: '/walk-in-showers',
           },
           {
             label: 'Bathtub Replacement',
-            route: '/gallery'
+            route: '/bathtub-replacement',
           },
           {
             label: 'Flooring, Vanity, Drywall',
-            route: '/gallery'
-          }
-        ]
+            route: '/flooring',
+          },
+        ],
       },
       {
         label: 'Gallery',
         items: [
           {
             label: 'Recent Bathroom Projects',
-            route: '/gallery'
+            route: '/gallery',
           },
           {
             label: 'Recent Window Projects',
-            route: '/gallery'
-          }
-        ]
+            route: '/gallery',
+          },
+        ],
       },
       {
         label: 'About Us',
-        route: '/about-us'
-      }
+        route: '/about-us',
+      },
     ];
   }
-
-
-
 
   showMenu() {
     this.menuVisible = true;
@@ -144,5 +145,4 @@ export class NavbarComponent {
   hideMenu() {
     this.menuVisible = false;
   }
-
 }
