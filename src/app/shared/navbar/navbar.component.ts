@@ -34,7 +34,7 @@ export class NavbarComponent {
   itemsBathroom: MegaMenuItem[] | undefined;
   menuVisible = false;
   label!: string;
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   ngOnInit() {
     // this.items = [
@@ -102,7 +102,7 @@ export class NavbarComponent {
           },
           {
             label: 'Shower to Tub Conversions',
-            route: '/shower-to-hub',
+            route: '/shower-to-tub',
           },
           {
             label: 'Walk-In Showers',
