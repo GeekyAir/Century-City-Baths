@@ -106,7 +106,7 @@ export class NavbarComponent {
           },
           {
             label: 'Walk-In Showers',
-            route: '/gallery',
+            route: '/walk-in-showers',
           },
           {
             label: 'Bathtub Replacement',
