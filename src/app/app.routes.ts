@@ -110,5 +110,12 @@ export const routes: Routes = [
         (c) => c.EnergyEfficientComponent
       ),
   },
+  {
+    path: 'Financing',
+    loadComponent: () =>
+      import('./components/financ/financ.component').then(
+        (c) => c.FinancComponent
+      ),
+  },
 
 ];
