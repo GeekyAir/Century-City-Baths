@@ -8,6 +8,6 @@ import { ServicesComponent } from '../../../shared/services/services.component';
   standalone: true,
   templateUrl: './walk-in-showers.component.html',
   styleUrl: './walk-in-showers.component.scss',
-  imports: [RouterLink, SidePanelComponent, ServicesComponent],
+  imports: [RouterLink, SidePanelComponent, ServicesComponent, RouterLink],
 })
 export class WalkInShowersComponent {}
