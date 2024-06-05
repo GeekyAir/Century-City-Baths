@@ -1,0 +1,38 @@
+.bathtub-replacement {
+
+    .container {
+        .row {
+
+
+            h2,
+            h3 {
+                color: #003057;
+                font-size: 25px;
+                font-weight: 700;
+                font-family: 'Oswald';
+
+            }
+
+            p {
+                font-family: 'Open Sans';
+                color: rgb(70, 70, 70)
+            }
+
+            ul {
+                li {
+                    color: #464646;
+                    margin-bottom: 10px;
+
+
+                    .btn {
+                        background-color: #FF5200;
+                        color: #fff;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+}
