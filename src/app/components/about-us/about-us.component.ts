@@ -3,11 +3,18 @@ import { Component } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria';
 import { FormComponent } from '../../shared/form/form.component';
 import { CardModule } from 'primeng/card';
+import { ServicesComponent } from '../../shared/services/services.component';
 
 @Component({
   selector: 'app-about-us',
   standalone: true,
-  imports: [GalleriaModule, CommonModule, FormComponent, CardModule],
+  imports: [
+    GalleriaModule,
+    CommonModule,
+    FormComponent,
+    CardModule,
+    ServicesComponent,
+  ],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.scss',
 })
