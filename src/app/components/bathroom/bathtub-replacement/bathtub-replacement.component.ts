@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { CardModule } from 'primeng/card';
-import { FormComponent } from '../../../shared/form/form.component';
 import { RouterLink } from '@angular/router';
+import { SidePanelComponent } from '../../../shared/side-panel/side-panel.component';
+import { ServicesComponent } from '../../../shared/services/services.component';
 
 @Component({
   selector: 'app-bathtub-replacement',
   standalone: true,
   templateUrl: './bathtub-replacement.component.html',
   styleUrl: './bathtub-replacement.component.scss',
-  imports: [CardModule, FormComponent, RouterLink],
+  imports: [RouterLink, SidePanelComponent, ServicesComponent],
 })
 export class BathtubReplacementComponent {}

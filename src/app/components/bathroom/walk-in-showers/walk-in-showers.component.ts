@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { FormComponent } from '../../../shared/form/form.component';
-import { CardModule } from 'primeng/card';
 import { RouterLink } from '@angular/router';
+import { SidePanelComponent } from '../../../shared/side-panel/side-panel.component';
+import { ServicesComponent } from '../../../shared/services/services.component';
 
 @Component({
   selector: 'app-walk-in-showers',
   standalone: true,
   templateUrl: './walk-in-showers.component.html',
   styleUrl: './walk-in-showers.component.scss',
-  imports: [FormComponent, CardModule, RouterLink],
+  imports: [RouterLink, SidePanelComponent, ServicesComponent],
 })
 export class WalkInShowersComponent {}

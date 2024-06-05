@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { CardModule } from 'primeng/card';
-import { FormComponent } from '../../../shared/form/form.component';
+import { SidePanelComponent } from '../../../shared/side-panel/side-panel.component';
+import { ServicesComponent } from '../../../shared/services/services.component';
+
 @Component({
   selector: 'app-tub-to-shower',
   standalone: true,
-  imports: [CardModule, FormComponent],
+  imports: [ServicesComponent, SidePanelComponent],
   templateUrl: './tub-to-shower.component.html',
-  styleUrl: './tub-to-shower.component.scss'
+  styleUrl: './tub-to-shower.component.scss',
 })
-export class TubToShowerComponent {
-
-}
+export class TubToShowerComponent {}
