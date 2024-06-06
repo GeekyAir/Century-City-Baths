@@ -119,7 +119,6 @@ export const routes: Routes = [
   },
 
   {
-<<<<<<< HEAD
     path: 'promotions',
     loadComponent: () =>
       import('./components/promotions/promotions.component').then(
@@ -132,19 +131,18 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./components/surrounding-areas/surrounding-areas.component').then(
         (c) => c.SurroundingAreasComponent
-=======
+      ),
+  },
+  {
     path: 'faq',
     loadComponent: () =>
-      import('./components/faq/faq.component').then(
-        (c) => c.FaqComponent
-      ),
+      import('./components/faq/faq.component').then((c) => c.FaqComponent),
   },
   {
     path: 'Privacy-Policy',
     loadComponent: () =>
       import('./components/privacy-policy/privacy-policy.component').then(
         (c) => c.PrivacyPolicyComponent
->>>>>>> 1c0ad76af81a66fbdfcc00662985d1a1450db18b
       ),
   },
 ];
