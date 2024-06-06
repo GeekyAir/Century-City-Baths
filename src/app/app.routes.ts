@@ -71,16 +71,16 @@ export const routes: Routes = [
   {
     path: 'Shapes-and-Picture',
     loadComponent: () =>
-      import('./components/windows/shapes-and-picture/shapes-and-picture.component').then(
-        (c) => c.ShapesAndPictureComponent
-      ),
+      import(
+        './components/windows/shapes-and-picture/shapes-and-picture.component'
+      ).then((c) => c.ShapesAndPictureComponent),
   },
   {
     path: 'Sliding-Replacement',
     loadComponent: () =>
-      import('./components/windows/sliding-replacement/sliding-replacement.component').then(
-        (c) => c.SlidingReplacementComponent
-      ),
+      import(
+        './components/windows/sliding-replacement/sliding-replacement.component'
+      ).then((c) => c.SlidingReplacementComponent),
   },
   {
     path: 'Bay-and-Bow',
@@ -92,9 +92,9 @@ export const routes: Routes = [
   {
     path: 'Casement-Replacement',
     loadComponent: () =>
-      import('./components/windows/casement-replacement/casement-replacement.component').then(
-        (c) => c.CasementReplacementComponent
-      ),
+      import(
+        './components/windows/casement-replacement/casement-replacement.component'
+      ).then((c) => c.CasementReplacementComponent),
   },
   {
     path: 'Double-Hung',
@@ -106,9 +106,9 @@ export const routes: Routes = [
   {
     path: 'Energy-Efficient',
     loadComponent: () =>
-      import('./components/windows/energy-efficient/energy-efficient.component').then(
-        (c) => c.EnergyEfficientComponent
-      ),
+      import(
+        './components/windows/energy-efficient/energy-efficient.component'
+      ).then((c) => c.EnergyEfficientComponent),
   },
   {
     path: 'Financing',
@@ -119,11 +119,24 @@ export const routes: Routes = [
   },
 
   {
+    path: 'promotions',
+    loadComponent: () =>
+      import('./components/promotions/promotions.component').then(
+        (c) => c.PromotionsComponent
+      ),
+  },
+
+  {
+    path: 'surrounding-areas',
+    loadComponent: () =>
+      import('./components/surrounding-areas/surrounding-areas.component').then(
+        (c) => c.SurroundingAreasComponent
+      ),
+  },
+  {
     path: 'faq',
     loadComponent: () =>
-      import('./components/faq/faq.component').then(
-        (c) => c.FaqComponent
-      ),
+      import('./components/faq/faq.component').then((c) => c.FaqComponent),
   },
   {
     path: 'Privacy-Policy',
