@@ -27,6 +27,7 @@
     z-index: 2;
 
     .row {
+
       .col-md-8 {
         h1 {
           font-family: "Roboto", sans-serif;
@@ -431,6 +432,19 @@
       opacity: 0;
       color: black;
     }
+
+    .card-gap {
+      gap: 20px;
+
+      p {
+        font-size: 12px !important;
+      }
+
+      a {
+        font-size: 13px !important;
+      }
+    }
+
   }
 
 }
