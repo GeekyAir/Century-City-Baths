@@ -118,4 +118,18 @@ export const routes: Routes = [
       ),
   },
 
+  {
+    path: 'faq',
+    loadComponent: () =>
+      import('./components/faq/faq.component').then(
+        (c) => c.FaqComponent
+      ),
+  },
+  {
+    path: 'Privacy-Policy',
+    loadComponent: () =>
+      import('./components/privacy-policy/privacy-policy.component').then(
+        (c) => c.PrivacyPolicyComponent
+      ),
+  },
 ];
