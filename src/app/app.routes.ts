@@ -145,4 +145,12 @@ export const routes: Routes = [
         (c) => c.PrivacyPolicyComponent
       ),
   },
+
+  {
+    path: 'contact',
+    loadComponent: () =>
+      import('./components/contact/contact.component').then(
+        (c) => c.ContactComponent
+      ),
+  },
 ];
