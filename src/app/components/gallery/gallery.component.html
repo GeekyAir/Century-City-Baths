@@ -13,49 +13,31 @@
     </p>
     <div class="dataBathroom py-5">
       <h4>Recent Bathroom Projects</h4>
-      <div
-        class="row justify-content-center align-items-center d-flex flex-wrap gap-1"
-      >
-        <div class="col-md-3 py-3" *ngFor="let image of images">
+      <div class="row align-items-center d-flex flex-wrap gap-1">
+        <div class="col-md-3 py-3" *ngFor="let image of bathroomsImages">
           <div>
-            <img
-              [src]="image.itemImageSrc"
-              [alt]="image.alt"
-              class="w-100"
-              (click)="showGallery()"
-            />
+            <img [src]="image" [alt]="image.alt" class="w-100" (click)="showGallery()" />
           </div>
         </div>
       </div>
     </div>
     <div class="dataWindow py-5">
       <h4>Recent Window Projects</h4>
-      <div
-        class="row justify-content-center align-items-center d-flex flex-wrap gap-3"
-      >
-        <div class="col-md-3" *ngFor="let image of images">
+      <div class="row  align-items-center d-flex flex-wrap gap-3">
+        <div class="col-md-3" *ngFor="let image of windowsImages">
           <div (click)="showGallery()">
-            <img [src]="image.itemImageSrc" [alt]="image.alt" class="w-100" />
+            <img [src]="image" [alt]="image.alt" class="w-100" />
           </div>
         </div>
       </div>
     </div>
 
     <div *ngIf="displayBasic">
-      <p-galleria
-        [value]="images"
-        [(visible)]="displayBasic"
-        (visibleChange)="closeGallery()"
-        [responsiveOptions]="responsiveOptions"
-        [containerStyle]="{ 'max-width': '850px' }"
-        [numVisible]="7"
-        [circular]="true"
-        [fullScreen]="true"
-        [showItemNavigators]="true"
-        [showThumbnails]="false"
-      >
+      <p-galleria [value]="windowsImages" [(visible)]="displayBasic" (visibleChange)="closeGallery()"
+        [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '850px' }" [numVisible]="7"
+        [circular]="true" [fullScreen]="true" [showItemNavigators]="true" [showThumbnails]="false">
         <ng-template pTemplate="item" let-item>
-          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+          <img [src]="item" style="width: 100%; display: block" />
         </ng-template>
       </p-galleria>
     </div>
