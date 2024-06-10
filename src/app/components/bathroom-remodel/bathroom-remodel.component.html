@@ -3,8 +3,13 @@
     <div class="row ">
       <div class="col-lg-7 col-md-12">
 
-        <app-page-content title="Home" header="Welcome to our Website"
-          content="This is the home page content"></app-page-content>
+        <app-page-content></app-page-content>
+
+        <div class="row d-flex align-items-center d-flex gap-1 flex-wrap">
+          @for (item of bathroomImages; track $index) {
+          <div class="col-5"><img [src]="item" alt="" width="300" height="300"></div>
+          }
+        </div>
 
 
       </div>

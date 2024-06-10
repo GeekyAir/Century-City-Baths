@@ -26,15 +26,16 @@ export class PageContentComponent {
   loadPageData(pageId: string) {
     switch (pageId) {
       case 'shower-replacements':
-        this.title = 'Shower Replacements';
+        this.title =
+          'Transform Your Arlington Heights, IL Bathroom with Century City Baths and Windows Expert Remodeling Services!';
         this.header = 'Upgrade Your Shower Experience';
         this.content = 'Content about shower replacements...';
         break;
       case 'tub-to-shower-conversions':
         this.title = 'Tub-to-Shower Conversions';
-        this.content = '...';
+        this.content = '';
         break;
-      // ... Add cases for other pages
+
       default:
         this.title = '404 Not Found';
         this.header = 'Page Not Found';
