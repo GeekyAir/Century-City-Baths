@@ -153,4 +153,12 @@ export const routes: Routes = [
         (c) => c.ContactComponent
       ),
   },
+
+  {
+    path: 'bathroom-remodel/:pageId',
+    loadComponent: () =>
+      import('./components/bathroom-remodel/bathroom-remodel.component').then(
+        (c) => c.BathroomRemodelComponent
+      ),
+  },
 ];
