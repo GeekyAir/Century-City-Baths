@@ -20,6 +20,13 @@
       font-weight: 800;
       font-family: 'Oswald';
 
+      ul {
+        li {
+          cursor: pointer;
+          margin-bottom: 10px;
+        }
+      }
+
     }
   }
 }
