@@ -15,22 +15,22 @@
     }
 
     .Areas {
+      border-radius: 20px;
       background-color: #003057;
       color: #fff;
       font-weight: 800;
       font-family: 'Oswald';
 
-      ul {
-        li {
-          cursor: pointer;
-          margin-bottom: 10px;
-        }
+
+      li {
+        cursor: pointer;
+        margin-bottom: 10px;
       }
-
     }
-  }
 
-  i {
-    cursor: pointer;
   }
+}
+
+i {
+  cursor: pointer;
 }

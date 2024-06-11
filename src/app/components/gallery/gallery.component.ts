@@ -4,6 +4,7 @@ import { CardModule } from 'primeng/card';
 import { GalleriaModule } from 'primeng/galleria';
 import { GalleryService } from '../../core/services/gallery.service';
 
+
 @Component({
   selector: 'app-gallery',
   standalone: true,
@@ -13,6 +14,7 @@ import { GalleryService } from '../../core/services/gallery.service';
 })
 export class GalleryComponent {
   displayBasic: boolean = false;
+  displaywindows: boolean = false;
 
   windowsImages: any[] | undefined;
   bathroomsImages: any[] | undefined;
@@ -36,17 +38,36 @@ export class GalleryComponent {
     },
   ];
 
-  constructor(private GalleryService: GalleryService) {}
+  constructor(private GalleryService: GalleryService) { }
   ngOnInit() {
     this.getWindows();
     this.getBathrooms();
   }
+  // showGallery() {
+  //   this.displayBasic = true;
+  //   this.displaywindows = true;
+  // }
   showGallery() {
-    this.displayBasic = true;
+    if (this.displayBasic === true && this.displaywindows === true) {
+      this.closeGallery();
+    } else if (this.displayBasic === true) {
+      this.displaywindows = true;
+    } else {
+      this.displayBasic = true;
+    }
   }
   closeGallery() {
-    this.displayBasic = false;
+    if (this.displayBasic === true) {
+      this.displayBasic = false;
+    }
+    if (this.displaywindows === true) {
+      this.displaywindows = false;
+    }
   }
+  // closeGallery() {
+  //   this.displayBasic = false;
+  //   this.displaywindows = false;
+  // }
   getWindows() {
     this.GalleryService.getWindows().subscribe({
       next: (res) => {
