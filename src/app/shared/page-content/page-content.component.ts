@@ -10,11 +10,10 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 })
 export class PageContentComponent {
   title!: string;
-  content1!: string;
-  content2!: string;
-  content3!: string;
-  header!: string;
   pageId: any;
+  firstDesign: boolean = true;
+  secondDesign: boolean = false;
+  default: boolean = false;
 
   constructor(private route: ActivatedRoute) {}
 
@@ -28,108 +27,132 @@ export class PageContentComponent {
   loadPageData(pageId: string) {
     switch (pageId) {
       case 'arlington-heights-il':
-        this.title =
-          'Transform Your Arlington Heights, IL Bathroom with Century City Baths and Windows Expert Remodeling Services!';
-        this.content1 =
-          "At Century City Baths and Windows, we know that your Arlington Heights, IL area bathroom is more than just a practical space; it's a reflection of your unique taste and style. That's why we provide comprehensive bathroom remodeling services that are tailored to your specific needs and preferences. Our team of experts is dedicated to working with you throughout the process, from design to installation, to create a stunning bathroom that exceeds your expectations.";
-        this.content2 =
-          "Whether you're looking for custom showers, new tubs, vanities, or flooring, we offer a wide range of high-quality products and services to fit any budget. Our team uses only the best materials and employs the latest techniques to ensure that your bathroom renovation lasts for years to come. We are committed to providing exceptional attention to detail and customer satisfaction, and we serve the entire Arlington Heights, IL area.";
-        this.content3 =
-          "If you're ready to transform your bathroom into a beautiful and functional oasis, don't hesitate to contact Century City Baths and Windows today. We offer a free in-home consultation to discuss your project and provide a comprehensive estimate";
-
+        this.title = 'Arlington Heights';
         break;
 
       case 'aurora-il':
-        this.title =
-          "Transform Your Aurora, IL Bathroom with Century City Baths and Windows' Expert Remodeling Services!";
-        this.content1 =
-          "At Century City Baths and Windows, we know that your Aurora, IL area bathroom is more than just a practical space; it's a reflection of your unique taste and style. That's why we provide comprehensive bathroom remodeling services that are tailored to your specific needs and preferences. Our team of experts is dedicated to working with you throughout the process, from design to installation, to create a stunning bathroom that exceeds your expectations.";
-        this.content2 =
-          "Whether you're looking for custom showers, new tubs, vanities, or flooring, we offer a wide range of high-quality products and services to fit any budget. Our team uses only the best materials and employs the latest techniques to ensure that your bathroom renovation lasts for years to come. We are committed to providing exceptional attention to detail and customer satisfaction, and we serve the entire Aurora, IL area.";
-        this.content3 =
-          "If you're ready to transform your bathroom into a beautiful and functional oasis, don't hesitate to contact Century City Baths and Windows today. We offer a free in-home consultation to discuss your project and provide a comprehensive estimate.";
-
+        this.title = 'Aurora';
         break;
 
       case 'batavia-il':
-        this.title =
-          "Transform Your Batavia, IL Bathroom with Century City Baths and Windows' Expert Remodeling Services!";
-        this.content1 =
-          "At Century City Baths and Windows, we know that your Batavia, IL area bathroom is more than just a practical space; it's a reflection of your unique taste and style. That's why we provide comprehensive bathroom remodeling services that are tailored to your specific needs and preferences. Our team of experts is dedicated to working with you throughout the process, from design to installation, to create a stunning bathroom that exceeds your expectations.";
-        this.content2 =
-          "Whether you're looking for custom showers, new tubs, vanities, or flooring, we offer a wide range of high-quality products and services to fit any budget. Our team uses only the best materials and employs the latest techniques to ensure that your bathroom renovation lasts for years to come. We are committed to providing exceptional attention to detail and customer satisfaction, and we serve the entire Batavia, IL are";
-        this.content3 =
-          "If you're ready to transform your bathroom into a beautiful and functional oasis, don't hesitate to contact Century City Baths and Windows today. We offer a free in-home consultation to discuss your project and provide a comprehensive estimate.";
+        this.title = 'Batavia';
+
         break;
 
       case 'chicago-il':
-        this.title =
-          "Transform Your Chicago, IL Bathroom with Century City Baths and Windows' Expert Remodeling Services!";
-        this.content1 =
-          "At Century City Baths and Windows, we know that your Chicago IL area bathroom is more than just a practical space; it's a reflection of your unique taste and style. That's why we provide comprehensive bathroom remodeling services that are tailored to your specific needs and preferences. Our team of experts is dedicated to working with you throughout the process, from design to installation, to create a stunning bathroom that exceeds your expectations.";
-        this.content2 =
-          "Whether you're looking for custom showers, new tubs, vanities, or flooring, we offer a wide range of high-quality products and services to fit any budget. Our team uses only the best materials and employs the latest techniques to ensure that your bathroom renovation lasts for years to come. We are committed to providing exceptional attention to detail and customer satisfaction, and we serve the entire Chicago, IL area.";
-        this.content3 =
-          "If you're ready to transform your bathroom into a beautiful and functional oasis, don't hesitate to contact Century City Baths and Windows today. We offer a free in-home consultation to discuss your project and provide a comprehensive estimate. ";
+        this.title = 'Chicago';
+
         break;
 
       case 'crystal-lake-il':
-        this.title =
-          "Transform Your Crystal Lake, IL Bathroom with Century City Baths and Windows' Expert Remodeling Services!";
-        this.content1 =
-          "At Century City Baths and Windows, we know that your Crystal Lake, IL area bathroom is more than just a practical space; it's a reflection of your unique taste and style. That's why we provide comprehensive bathroom remodeling services that are tailored to your specific needs and preferences. Our team of experts is dedicated to working with you throughout the process, from design to installation, to create a stunning bathroom that exceeds your expectations.";
-        this.content2 =
-          "Whether you're looking for custom showers, new tubs, vanities, or flooring, we offer a wide range of high-quality products and services to fit any budget. Our team uses only the best materials and employs the latest techniques to ensure that your bathroom renovation lasts for years to come. We are committed to providing exceptional attention to detail and customer satisfaction, and we serve the entire Crystal Lake, IL area.";
-        this.content3 =
-          "If you're ready to transform your bathroom into a beautiful and functional oasis, don't hesitate to contact Century City Baths and Windows today. We offer a free in-home consultation to discuss your project and provide a comprehensive estimate.";
+        this.title = 'Crystal Lake';
+
         break;
 
-      // lessaaaaa
+      // lessaaaaa👇
+
       case 'des-plaines-il':
-        this.title = 'Tub-to-Shower Conversions';
-        this.content1 = '';
-        this.content2 = '';
+        this.firstDesign = false;
+        this.secondDesign = true;
+        this.title = 'Des Plaines';
         break;
-      // -----------------------
       case 'elgin-il':
-        this.title =
-          "Transform Your Elgin, IL Bathroom with Century City Baths and Windows' Expert Remodeling Services!";
-        this.content1 =
-          "At Century City Baths and Windows, we know that your Elgin, IL area bathroom is more than just a practical space; it's a reflection of your unique taste and style. That's why we provide comprehensive bathroom remodeling services that are tailored to your specific needs and preferences. Our team of experts is dedicated to working with you throughout the process, from design to installation, to create a stunning bathroom that exceeds your expectations.";
-        this.content2 =
-          "Whether you're looking for custom showers, new tubs, vanities, or flooring, we offer a wide range of high-quality products and services to fit any budget. Our team uses only the best materials and employs the latest techniques to ensure that your bathroom renovation lasts for years to come. We are committed to providing exceptional attention to detail and customer satisfaction, and we serve the entire Elgin, IL area.";
-        this.content3 =
-          "If you're ready to transform your bathroom into a beautiful and functional oasis, don't hesitate to contact Century City Baths and Windows today. We offer a free in-home consultation to discuss your project and provide a comprehensive estimate.";
+        this.title = 'Elgin';
         break;
 
       case 'elk-grove-village-il':
-        this.title = 'Tub-to-Shower Conversions';
-        this.content1 = '';
-        this.content2 = '';
+        this.title = 'Elk Grove Village';
+
         break;
 
       case 'elmhurst-il':
-        this.title = 'Tub-to-Shower Conversions';
-        this.content1 = '';
-        this.content2 = '';
+        this.title = 'Elmhurst';
         break;
 
       case 'elmwood-park-il':
-        this.title = 'Tub-to-Shower Conversions';
-        this.content1 = '';
-        this.content2 = '';
+        this.title = ' Elmwood Park';
         break;
 
-      case 'elmwood-park-il':
-        this.title = 'Tub-to-Shower Conversions';
-        this.content1 = '';
-        this.content2 = '';
+      // ------------------------------------------------------------
+
+      // lesaaa 👇
+      case 'evanston-il':
+        this.firstDesign = false;
+        this.secondDesign = true;
+        this.title = 'Evanston';
+        break;
+
+      case 'geneva-il':
+        this.title = 'Geneva';
+        break;
+
+      case 'glen-ellyn-il':
+        this.title = 'Glen Ellyn';
+        break;
+
+      case 'glenview-il':
+        this.title = 'Glenview';
+        break;
+
+      case 'joliet-il':
+        this.title = 'Joliet';
+        break;
+
+      case 'libertyville-il':
+        this.title = 'Libertyville';
+        break;
+
+      case 'lombard-il':
+        this.title = 'Lombard';
+        break;
+
+      case 'monee-il':
+        this.title = 'Monee';
+        break;
+
+      case 'northbrook-il':
+        this.title = 'Northbrook';
+        break;
+
+      case 'orland-park-il':
+        this.title = 'Orland Park';
+        break;
+      // -------------------------------------------------
+
+      case 'palos-heights-il':
+        this.title = 'Palos Heights';
+        break;
+      case 'palos-park-il':
+        this.title = 'Palos Park';
+        break;
+      // lessaaa👇
+      case 'plainfield-il':
+        this.firstDesign = false;
+        this.secondDesign = true;
+        this.title = 'Plainfield';
+        break;
+
+      case 'schaumburg-il':
+        this.title = 'Schaumburg';
+        break;
+      case 'south-elgin-il':
+        this.title = 'South Elgin';
+        break;
+      case 'tinley-park-il':
+        this.title = 'Tinley Park';
+        break;
+      case 'westmont-il':
+        this.title = 'Westmont';
+        break;
+      case 'wood-dale-il':
+        this.title = 'Wood Dale';
         break;
 
       default:
+        this.firstDesign = false;
+        this.secondDesign = false;
+        this.default = true;
         this.title = '404 Not Found';
-        this.content1 = 'Page Not Found';
-        this.content2 = 'The requested page could not be found.';
     }
   }
 }
