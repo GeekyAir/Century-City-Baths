@@ -49,7 +49,7 @@ export class PageContentComponent {
 
         break;
 
-      // lessaaaaa👇
+      // second-design👇
 
       case 'des-plaines-il':
         this.firstDesign = false;
@@ -75,7 +75,7 @@ export class PageContentComponent {
 
       // ------------------------------------------------------------
 
-      // lesaaa 👇
+      // second-design 👇
       case 'evanston-il':
         this.firstDesign = false;
         this.secondDesign = true;
@@ -125,7 +125,7 @@ export class PageContentComponent {
       case 'palos-park-il':
         this.title = 'Palos Park';
         break;
-      // lessaaa👇
+      // second-design👇
       case 'plainfield-il':
         this.firstDesign = false;
         this.secondDesign = true;
