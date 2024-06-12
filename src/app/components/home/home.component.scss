@@ -467,6 +467,31 @@
   }
 }
 
+@media (max-width: 768px) {
+  .pricing .card {
+    text-align: center;
+
+  }
+
+  .pricing .row .col-sm-6 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing .container {
+    padding: 0 15px;
+  }
+
+  .pricing .row .col-12 {
+    margin-bottom: 20px;
+  }
+
+  .pricing .card {
+    padding: 20px;
+  }
+}
+
 .estimate {
   background-color: #FF5200;
   color: white;
