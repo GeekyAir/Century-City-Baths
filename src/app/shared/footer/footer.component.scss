@@ -25,8 +25,8 @@
 
                 .box {
                     background-color: #003057;
-                    width: 40px;
-                    height: 40px;
+                    width: 30px;
+                    height: 30px;
                     outline: none;
                     border: 1px solid black;
                     justify-content: center;
@@ -39,6 +39,11 @@
                     -ms-border-radius: 50px;
                     -o-border-radius: 50px;
                     margin-bottom: 15px;
+                }
+
+                .box:hover {
+                    background-color: #d34212;
+
                 }
 
             }
