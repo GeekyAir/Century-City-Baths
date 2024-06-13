@@ -41,3 +41,20 @@ li {
   }
 
 }
+
+@media only screen and (min-width: 1024px) {
+
+
+  img {
+    width: 155px !important;
+
+  }
+
+  .btn-estimate {
+    width: 150px;
+    font-size: 10px;
+    height: 35px;
+  }
+
+
+}
