@@ -453,9 +453,10 @@
   .container {
     .row {
       .col-md-3 {
-        height: 500px;
 
         .card {
+          height: 450px !important;
+
           h5 {
             color: #278CA9;
             font-weight: 600;
