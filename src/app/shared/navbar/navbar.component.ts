@@ -25,10 +25,9 @@ interface MenuItem {
     CommonModule,
     RouterModule,
     MenubarModule,
+    RouterLinkActive,
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
-export class NavbarComponent {
-
-}
+export class NavbarComponent {}
