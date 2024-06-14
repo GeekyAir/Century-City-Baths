@@ -161,4 +161,12 @@ export const routes: Routes = [
         (c) => c.BathroomRemodelComponent
       ),
   },
+
+  {
+    path: 'reviews',
+    loadComponent: () =>
+      import('./components/reviews/reviews.component').then(
+        (c) => c.ReviewsComponent
+      ),
+  },
 ];
