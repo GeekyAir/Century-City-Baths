@@ -453,9 +453,10 @@
   .container {
     .row {
       .col-md-3 {
-        height: 500px;
 
         .card {
+          height: 450px !important;
+
           h5 {
             color: #278CA9;
             font-weight: 600;
@@ -464,6 +465,31 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing .card {
+    text-align: center;
+
+  }
+
+  .pricing .row .col-sm-6 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing .container {
+    padding: 0 15px;
+  }
+
+  .pricing .row .col-12 {
+    margin-bottom: 20px;
+  }
+
+  .pricing .card {
+    padding: 20px;
   }
 }
 
