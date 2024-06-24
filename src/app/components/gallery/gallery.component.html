@@ -1,4 +1,4 @@
-<section class="py-5 gallery ">
+<section class="py-5 gallery">
   <div class="container">
     <h3>
       Discover Our Stunning Recent Projects at Century City Baths and Windows!
@@ -8,15 +8,22 @@
       accomplished for our clients, from energy-efficient window replacements to
       luxurious bathroom renovations. At Century City Baths and Windows, we're
       committed to providing top-quality services that exceed your expectations.
-      If you're looking to transform your home, contact us at (309) 487-2105 to
-      schedule a free in-home estimate.
+      If you're looking to transform your home, contact us at
+      <a href="tel:+13094872105">(309) 487-2105</a>
+      to schedule a free in-home estimate.
     </p>
     <div class="dataBathroom py-5">
       <h4>Recent Bathroom Projects</h4>
       <div class="row align-items-center d-flex flex-wrap gap-1">
         <div class="col-md-3 py-3" *ngFor="let image of bathroomsImages">
           <div>
-            <img [src]="image" [alt]="image.alt" class="w-100" height="250" (click)="showGallery()" />
+            <img
+              [src]="image"
+              [alt]="image.alt"
+              class="w-100"
+              height="250"
+              (click)="showGallery()"
+            />
           </div>
         </div>
       </div>
