@@ -4,6 +4,7 @@ import { GalleriaModule } from 'primeng/galleria';
 import { FormComponent } from '../../shared/form/form.component';
 import { CardModule } from 'primeng/card';
 import { ServicesComponent } from '../../shared/services/services.component';
+import { SidePanelComponent } from '../../shared/side-panel/side-panel.component';
 
 @Component({
   selector: 'app-about-us',
@@ -14,6 +15,7 @@ import { ServicesComponent } from '../../shared/services/services.component';
     FormComponent,
     CardModule,
     ServicesComponent,
+    SidePanelComponent,
   ],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.scss',

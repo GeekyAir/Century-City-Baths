@@ -24,5 +24,24 @@
   background: linear-gradient(rgba(0, 48, 87, .8), rgba(0, 48, 87, .7)), url(https://cdn-jjfcl.nitrocdn.com/XPFcOjqjRmZDdavmRxXUnIcNNqorJIsz/assets/images/optimized/rev-3ba151a/madcitywindows.com/wp-content/themes/_custom/img/quote-bg.jpeg) no-repeat top left;
   min-height: 550px;
 
+  .row {
+    width: 100%;
+    max-width: 100%;
 
+    img {
+      width: 90px;
+    }
+  }
+
+
+}
+
+@media only screen and (min-width: 319px) and (max-width: 769px) {
+  .formInstall {
+    .row {
+      img {
+        width: 70px;
+      }
+    }
+  }
 }
