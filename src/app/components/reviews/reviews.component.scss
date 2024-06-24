@@ -5,4 +5,16 @@
     background-color: #FF5200;
     color: #fff;
   }
+
+  .review {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 769px) {
+  .reviews {
+    .review {
+      flex-direction: column !important;
+    }
+  }
 }
