@@ -1,36 +1,36 @@
 .box-form {
-    .PAYMENTS {
-        color: #278CA9;
-        font-weight: 600;
+  .PAYMENTS {
+    color: #278CA9;
+    font-weight: 600;
+  }
+
+  background-color: #003057;
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  flex-direction: column;
+  color: white;
+  // width: 300px;
+  border-radius: 11px;
+  padding: 15px;
+
+  form {
+    input {
+      display: block !important;
     }
 
-    background-color: #003057;
-
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    flex-direction: column;
-    color: white;
-    // width: 300px;
-    border-radius: 11px;
-    padding: 15px;
-
-    form {
-        input {
-            display: block !important;
-        }
-
-        button {
-            background-color: #FF5200;
-            color: white;
-            outline: none;
-            border: none;
-            width: 100%;
-            font-weight: 700;
-            height: 40px;
-            font-size: 19px;
+    button {
+      background-color: #FF5200;
+      color: white;
+      outline: none;
+      border: none;
+      width: 100%;
+      font-weight: 700;
+      height: 40px;
+      font-size: 16px;
 
 
-        }
     }
+  }
 }
