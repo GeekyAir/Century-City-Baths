@@ -20,6 +20,13 @@ li {
   }
 }
 
+a {
+  text-transform: capitalize;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
 .nav-item {
   position: relative;
 }
