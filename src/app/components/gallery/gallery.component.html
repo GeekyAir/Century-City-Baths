@@ -15,27 +15,29 @@
     <div class="dataBathroom py-5">
       <h4>Recent Bathroom Projects</h4>
       <div class="row align-items-center d-flex flex-wrap gap-1">
+        @if(spinner){
+        <app-spinner></app-spinner>
+        }@else
+        {
         <div class="col-md-3 py-3" *ngFor="let image of bathroomsImages">
           <div>
-            <img
-              [src]="image"
-              [alt]="image.alt"
-              class="w-100"
-              height="250"
-              (click)="showGallery()"
-            />
+            <img [src]="image" [alt]="image.alt" class="w-100" height="250" (click)="showGallery()" />
           </div>
         </div>
+        }
       </div>
     </div>
     <!-- <div class="dataWindow py-5">
       <h4>Recent Window Projects</h4>
       <div class="row align-items-center d-flex flex-wrap gap-3">
+        @if(spinner){
+        <app-spinner></app-spinner>
+        }@else{
         <div class="col-md-3" *ngFor="let image of windowsImages">
           <div (click)="showGallery()">
             <img [src]="image" [alt]="image.alt" class="w-100" />
           </div>
-        </div>
+        </div>}
       </div>
     </div> -->
 

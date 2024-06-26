@@ -3,18 +3,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardModule } from 'primeng/card';
 import { GalleriaModule } from 'primeng/galleria';
 import { GalleryService } from '../../core/services/gallery.service';
-
+import { SpinnerComponent } from '../../shared/spinner/spinner.component';
 
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [CardModule, GalleriaModule, ReactiveFormsModule],
+  imports: [CardModule, GalleriaModule, ReactiveFormsModule, SpinnerComponent],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.scss',
 })
 export class GalleryComponent {
   displayBasic: boolean = false;
   displaywindows: boolean = false;
+  spinner: boolean = false;
 
   windowsImages: any[] | undefined;
   bathroomsImages: any[] | undefined;
@@ -38,7 +39,7 @@ export class GalleryComponent {
     },
   ];
 
-  constructor(private GalleryService: GalleryService) { }
+  constructor(private GalleryService: GalleryService) {}
   ngOnInit() {
     this.getWindows();
     this.getBathrooms();
@@ -69,23 +70,29 @@ export class GalleryComponent {
   //   this.displaywindows = false;
   // }
   getWindows() {
+    this.spinner = true;
     this.GalleryService.getWindows().subscribe({
       next: (res) => {
+        this.spinner = false;
         console.log(res);
         this.windowsImages = res;
       },
       error: (err) => {
+        this.spinner = true;
         console.log(err);
       },
     });
   }
   getBathrooms() {
+    this.spinner = true;
     this.GalleryService.getBathrooms().subscribe({
       next: (res) => {
+        this.spinner = false;
         console.log(res);
         this.bathroomsImages = res;
       },
       error: (err) => {
+        this.spinner = true;
         console.log(err);
       },
     });
