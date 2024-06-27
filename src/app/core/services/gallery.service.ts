@@ -1,11 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { FormGroup } from '@angular/forms';
+import { Observable, Observer } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class GalleryService {
+  form!: FormGroup;
+
   constructor(private HttpClient: HttpClient) { }
 
   getWindows(): Observable<any> {
@@ -38,4 +41,11 @@ export class GalleryService {
       }
     });
   }
+  private zapierUrl: string = 'https://hooks.zapier.com/hooks/catch/17356497/2blub1q/';
+
+
+  sendFormToZapier() {
+    return this.HttpClient.post(this.zapierUrl, this.form);
+  }
+
 }
