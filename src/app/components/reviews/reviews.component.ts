@@ -11,24 +11,27 @@ import { GalleryService } from '../../core/services/gallery.service';
   styleUrl: './reviews.component.scss',
 })
 export class ReviewsComponent implements OnInit, AfterViewInit {
-  constructor(private scriptLoader: GalleryService) { }
+  constructor(private scriptLoader: GalleryService) {}
 
-  ngOnInit(): void {
-
-  }
-
-
-  ngAfterViewInit(): void {
-    this.loadGoogleReviewsScript();
+  ngOnInit(): void {}
+  ngAfterViewInit() {
+    const script = document.createElement('script');
+    script.src =
+      'https://embedsocial.com/api/pro_hashtag/3c21059735f62f96697a8597f9a23bc805ecdbeb';
+    document.body.appendChild(script);
   }
 
   loadGoogleReviewsScript() {
-    this.scriptLoader.loadScript('https://www.thumbtack.com/profile/widgets/scripts/?service_pk=402701430322864134&widget_id=review&type=star', 'google-reviews-script')
+    this.scriptLoader
+      .loadScript(
+        'https://www.thumbtack.com/profile/widgets/scripts/?service_pk=402701430322864134&widget_id=review&type=star',
+        'google-reviews-script'
+      )
       .then(() => {
         console.log('Google Reviews script loaded successfully.');
         this.initializeGoogleReviews();
       })
-      .catch(error => {
+      .catch((error) => {
         console.error('Error loading Google Reviews script:', error);
       });
   }
