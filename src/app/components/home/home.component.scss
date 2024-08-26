@@ -107,9 +107,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    /* Center content vertically */
     justify-content: center;
-    /* Center content horizontally */
     transition: 0.4s ease-out;
     box-shadow: 0px 7px 10px rgba(253, 253, 253, 0.975);
     background-image: url(../../../assets/home/se1.jpg);
@@ -199,6 +197,11 @@
         text-decoration: none;
         font-size: 18px;
       }
+    }
+
+    h4 {
+      position: absolute;
+      top: 10%;
     }
   }
 

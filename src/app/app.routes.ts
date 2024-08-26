@@ -76,35 +76,35 @@ export const routes: Routes = [
       ).then((c) => c.ShapesAndPictureComponent),
   },
   {
-    path: 'Sliding-Replacement',
+    path: 'Countertops',
     loadComponent: () =>
       import(
         './components/windows/sliding-replacement/sliding-replacement.component'
       ).then((c) => c.SlidingReplacementComponent),
   },
   {
-    path: 'Bay-and-Bow',
+    path: 'Innovative-Solutions',
     loadComponent: () =>
       import('./components/windows/bay-and-bow/bay-and-bow.component').then(
         (c) => c.BayAndBowComponent
       ),
   },
   {
-    path: 'Casement-Replacement',
+    path: 'Premium-Materials',
     loadComponent: () =>
       import(
         './components/windows/casement-replacement/casement-replacement.component'
       ).then((c) => c.CasementReplacementComponent),
   },
   {
-    path: 'Double-Hung',
+    path: 'Custom-Cabinetry',
     loadComponent: () =>
       import('./components/windows/double-hung/double-hung.component').then(
         (c) => c.DoubleHungComponent
       ),
   },
   {
-    path: 'Energy-Efficient',
+    path: 'Design-Planning',
     loadComponent: () =>
       import(
         './components/windows/energy-efficient/energy-efficient.component'
