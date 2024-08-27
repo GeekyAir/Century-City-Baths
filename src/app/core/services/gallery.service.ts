@@ -9,7 +9,7 @@ import { Observable, Observer } from 'rxjs';
 export class GalleryService {
   form!: FormGroup;
 
-  constructor(private HttpClient: HttpClient) { }
+  constructor(private HttpClient: HttpClient) {}
 
   getWindows(): Observable<any> {
     return this.HttpClient.get(
@@ -34,18 +34,22 @@ export class GalleryService {
         script.async = true;
         script.defer = true;
         script.onload = () => resolve();
-        script.onerror = () => reject(new Error(`Failed to load script ${src}`));
+        script.onerror = () =>
+          reject(new Error(`Failed to load script ${src}`));
         document.body.appendChild(script);
       } else {
         resolve();
       }
     });
   }
-  private zapierUrl: string = 'https://hooks.zapier.com/hooks/catch/17356497/2blub1q/';
+  private zapierUrl: string =
+    'https://hooks.zapier.com/hooks/catch/17356497/3wds2yj/';
 
+  // sendFormToZapier() {
+  //   return this.HttpClient.post(this.zapierUrl, this.form);
+  // }
 
-  sendFormToZapier() {
-    return this.HttpClient.post(this.zapierUrl, this.form);
+  sendFormToZapier(formData: any) {
+    return this.HttpClient.post(this.zapierUrl, formData);
   }
-
 }
