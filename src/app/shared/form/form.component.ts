@@ -22,8 +22,7 @@ export class FormComponent {
   constructor(
     private fb: FormBuilder,
     private _GalleryService: GalleryService,
-    private _messageService: MessageService,
-    private zone: NgZone
+    private _messageService: MessageService
   ) {
     this.formdata = this.fb.group({
       firstName: ['', Validators.required],
@@ -43,6 +42,8 @@ export class FormComponent {
       this._GalleryService.submitForm(this.formdata.value).subscribe(
         (response) => {
           console.log('Form submitted successfully:', response);
+          this.showSuccess();
+          this.formdata.reset();
         },
         (error) => {
           console.error('Error sending form:', error);
