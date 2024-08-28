@@ -1,24 +1,25 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpBackend, HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { Observable, Observer } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class GalleryService {
-  form!: FormGroup;
+  formData!: FormGroup;
+  private endpoint = 'https://hooks.zapier.com/hooks/catch/17356497/3wds2yj/';
 
-  constructor(private HttpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
   getWindows(): Observable<any> {
-    return this.HttpClient.get(
+    return this.httpClient.get(
       `https://brandon-gstorage-backend-renderteam.onrender.com/folder/windows/files`
     );
   }
 
   getBathrooms(): Observable<any> {
-    return this.HttpClient.get(
+    return this.httpClient.get(
       `https://brandon-gstorage-backend-renderteam.onrender.com/folder/bathrooms/files`
     );
   }
@@ -34,18 +35,20 @@ export class GalleryService {
         script.async = true;
         script.defer = true;
         script.onload = () => resolve();
-        script.onerror = () => reject(new Error(`Failed to load script ${src}`));
+        script.onerror = () =>
+          reject(new Error(`Failed to load script ${src}`));
         document.body.appendChild(script);
       } else {
         resolve();
       }
     });
   }
-  private zapierUrl: string = 'https://hooks.zapier.com/hooks/catch/17356497/2blub1q/';
 
+  submitForm(formData: any): Observable<any> {
+    const headers = new HttpHeaders({ 'Content-Type': 'multipart/form-data' });
 
-  sendFormToZapier() {
-    return this.HttpClient.post(this.zapierUrl, this.form);
+    return this.httpClient.post<any>(this.endpoint, JSON.stringify(formData), {
+      headers,
+    });
   }
-
 }
