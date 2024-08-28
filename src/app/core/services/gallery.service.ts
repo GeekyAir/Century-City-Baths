@@ -45,12 +45,8 @@ export class GalleryService {
   }
 
   submitForm(formData: any): Observable<any> {
-    const formDataString = Object.entries(formData)
-      .map(([key, value]) => `${key}: ${value}`)
-      .join(', ');
     const headers = new HttpHeaders({ 'Content-Type': 'multipart/form-data' });
-    console.log(formDataString);
 
-    return this.httpClient.post(this.endpoint, formDataString, { headers });
+    return this.httpClient.post(this.endpoint, formData, { headers });
   }
 }
