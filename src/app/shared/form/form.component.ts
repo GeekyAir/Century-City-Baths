@@ -46,7 +46,6 @@ export class FormComponent {
         },
         (error) => {
           console.error('Error sending form:', error);
-          console.error('Detailed error:', error.message);
         }
       );
     }
